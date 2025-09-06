@@ -43,6 +43,12 @@ where ![fx](https://latex.codecogs.com/svg.latex?f(x)) is easy to compute but ![
 ## Why do we need to compute the evidence?
 
 
-Because if we want to work out the probability of a particular outcome we need to perform the familiar computation of ![prob](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5C%23%20%5Ctext%7Bways%20the%20thing%20can%20happen%7D%7D%7B%5C%23%20%5Ctext%7Btotal%20number%20of%20things%20that%20can%20happen%7D%7D).
-The total number of ways that the data could have been generated is the formula for the evidence ![evidence]
+Because if we want to work out the probability of a particular outcome we need to perform the familiar computation of 
+
+![prob](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5C%23%20%5Ctext%7Bways%20the%20thing%20can%20happen%7D%7D%7B%5C%23%20%5Ctext%7Btotal%20number%20of%20things%20that%20can%20happen%7D%7D).
+
+
+The total number of ways that the data could have been generated is the formula for the evidence:
+
+![evidence](https://latex.codecogs.com/svg.latex?p(d)%20%3D%20%5Cint%20p(d%7Ch)p(h)%5C%2Cdh)
 
