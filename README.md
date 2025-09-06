@@ -1,4 +1,4 @@
-# Approximate inference tutorial
+## Approximate inference tutorial
 This repo covers the main methods for performing approximate inference in Bayesian statistics. 
 
 Contents:
@@ -8,7 +8,7 @@ Contents:
 4. Sequential Monte Carlo (SMC)
 5. Amortised Inference
 
-# Why approximate?
+## Why approximate?
 Let's look at Bayes' rule:
 
 ![Bayes](https://latex.codecogs.com/svg.latex?p(h%7Cd)%20%3D%20%5Cfrac%7Bp(d%7Ch)p(h)%7D%7Bp(d)%7D)
@@ -39,4 +39,8 @@ We have a distribution function
 ![unnormalised](https://latex.codecogs.com/svg.latex?p(x)%20%3D%20%5Cfrac%7B1%7D%7Bnc%7D%20f(x))
 
 where ![fx](https://latex.codecogs.com/svg.latex?f(x)) is easy to compute but ![nc](https://latex.codecogs.com/svg.latex?nc), the normalising constant, is very hard.  
+
+## Why do we need to compute the evidence?
+
+Because if we want to work out the probability of a particular outcome we need to perform the familiar computation of ![prob](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5C%23%20%5Ctext%7Bways%20the%20thing%20can%20happen%7D%7D%7B%5C%23%20%5Ctext%7Btotal%20number%20of%20things%20that%20can%20happen%7D%7D)
 
