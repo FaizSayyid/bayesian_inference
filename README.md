@@ -43,12 +43,14 @@ where ![fx](https://latex.codecogs.com/svg.latex?f(x)) is easy to compute but ![
 ## Why do we need to compute the evidence?
 
 
-Because if we want to work out the probability of a particular outcome we need to perform the familiar computation of 
+Because if we want to work out the probability of a particular outcome, we need to normalize by the **total probability of the data under all possible hypotheses**.  
 
-![prob](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5C%23%20%5Ctext%7Bways%20the%20thing%20can%20happen%7D%7D%7B%5C%23%20%5Ctext%7Btotal%20number%20of%20things%20that%20can%20happen%7D%7D).
+In the finite/discrete case this looks like the familiar formula we learned in school:
 
+![prob](https://latex.codecogs.com/svg.latex?%5Ctext%7Bprobability%7D%20%3D%20%5Cfrac%7B%5Ctext%7Bweight%20of%20the%20ways%20the%20thing%20can%20happen%7D%7D%7B%5Ctext%7Btotal%20weight%20of%20all%20possible%20ways%20it%20could%20happen%7D%7D)
 
-The total number of ways that the data could have been generated is the formula for the evidence:
+In Bayesian inference the same principle applies, but instead of *counting* outcomes, we **sum or integrate over hypotheses**, weighting each by its prior plausibility and the likelihood of the data under it:
 
-![evidence](https://latex.codecogs.com/svg.latex?p(d)%20%3D%20%5Cint%20p(d%7Ch)p(h)%5C%2Cdh)
+![evidence](https://latex.codecogs.com/svg.latex?p(d)%20%3D%20%5Cint%20p(d%7Ch)%5C%2C%20p(h)%5C%2C%20dh)
 
+This term ensures that the posterior ![posterior](https://latex.codecogs.com/svg.latex?p(h%7Cd)) is a proper probability distribution (i.e. integrates to 1).
