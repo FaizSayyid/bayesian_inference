@@ -1,7 +1,7 @@
 ## Approximate inference tutorial
 This repo covers the main methods for performing approximate inference in Bayesian statistics. 
 
-Contents:
+### Contents:
 1. Markov Chain Monte Carlo (MCMC)
 2. Approximate Bayesian Computation (ABC)
 3. Variational Inference (VI)
