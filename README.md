@@ -38,7 +38,7 @@ We have a distribution function
 
 ![unnormalised](https://latex.codecogs.com/svg.latex?p(x)%20%3D%20%5Cfrac%7B1%7D%7Bnc%7D%20f(x))
 
-where ![fx](https://latex.codecogs.com/svg.latex?f(x)) is easy to compute but ![nc](https://latex.codecogs.com/svg.latex?nc), the normalising constant, is very hard.  
+where ![fx](https://latex.codecogs.com/svg.latex?f(x)) is easy to compute but ![nc](https://latex.codecogs.com/svg.latex?nc), the normalising constant, is very hard. Because it is so hard to compute exactly in most complicated (non-conjugate) models we instead approximate it.
 
 ## Why do we need to compute the evidence?
 
@@ -54,3 +54,8 @@ In Bayesian inference the same principle applies, but instead of *counting* outc
 ![evidence](https://latex.codecogs.com/svg.latex?p(d)%20%3D%20%5Cint%20p(d%7Ch)%5C%2C%20p(h)%5C%2C%20dh)
 
 This term ensures that the posterior ![posterior](https://latex.codecogs.com/svg.latex?p(h%7Cd)) is a proper probability distribution (i.e. integrates to 1).
+
+**All of the methods covered in this tutorial repo are ways of avoiding having to compute evidence term in its entireity** 
+
+
+## A sketch to demonstrate how hard computing the evidence can be:
